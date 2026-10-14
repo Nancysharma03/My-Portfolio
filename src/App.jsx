@@ -27,14 +27,15 @@ import "./App.css";
 // Files must exist inside the public folder.
 // ============================================================
 
+
 const PROFILE = {
   name: "Nancy Sharma",
   linkedin: "https://www.linkedin.com/in/nancy-sharma-751319293",
   github: "https://github.com/Nancysharma03",
   email: "ushasharma1331994@gmail.com",
   photo: "/images/nancy-profile.png",
-  javaResume: "/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
-  analyticsResume: "/Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
+  javaResume: "/resume-java.pdf",
+  analyticsResume: "/resume-analytics.pdf",
 };
 
 // ============================================================
@@ -294,8 +295,9 @@ const skillGroups = [
       "Postman",
       "Responsive Web Design",
     ],
+    // Java group
     resume: PROFILE.javaResume,
-    downloadName: "/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
+    downloadName: "Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
     buttonLabel: "Download Resume",
   },
   {
@@ -328,8 +330,9 @@ const skillGroups = [
       "Cross-Validation",
       "Hyperparameter Tuning",
     ],
+    // AI/ML and Data Analytics groups
     resume: PROFILE.analyticsResume,
-    downloadName: "/Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
+    downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf", 
     buttonLabel: "Download Resume",
   },
   {
@@ -357,8 +360,9 @@ const skillGroups = [
       "Data Visualization",
       "Jupyter Notebook",
     ],
+    // AI/ML and Data Analytics groups
     resume: PROFILE.analyticsResume,
-    downloadName: "/Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
+    downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
     buttonLabel: "Download Resume",
   },
 ];
