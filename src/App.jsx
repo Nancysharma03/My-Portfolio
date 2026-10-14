@@ -295,10 +295,10 @@ const skillGroups = [
       "Postman",
       "Responsive Web Design",
     ],
-    // Java group
-    resume: PROFILE.javaResume,
-    downloadName: "Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
-    buttonLabel: "Download Resume",
+    // // Java group
+    // resume: PROFILE.javaResume,
+    // downloadName: "Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
+    // buttonLabel: "Download Resume",
   },
   {
     id: "aiml",
@@ -330,10 +330,10 @@ const skillGroups = [
       "Cross-Validation",
       "Hyperparameter Tuning",
     ],
-    // AI/ML and Data Analytics groups
-    resume: PROFILE.analyticsResume,
-    downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf", 
-    buttonLabel: "Download Resume",
+    // // AI/ML and Data Analytics groups
+    // resume: PROFILE.analyticsResume,
+    // downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf", 
+    // buttonLabel: "Download Resume",
   },
   {
     id: "analytics",
@@ -361,9 +361,9 @@ const skillGroups = [
       "Jupyter Notebook",
     ],
     // AI/ML and Data Analytics groups
-    resume: PROFILE.analyticsResume,
-    downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
-    buttonLabel: "Download Resume",
+    // resume: PROFILE.analyticsResume,
+    // downloadName: "Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
+    // buttonLabel: "Download Resume",
   },
 ];
 
@@ -396,13 +396,13 @@ function SocialLinks() {
         <Mail size={18} />
       </a>
 
-      <a
+      {/* <a
         href={PROFILE.javaResume}
         download="/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf"
         aria-label="Download Java resume"
       >
         <FileText size={18} />
-      </a>
+      </a> */}
     </div>
   );
 }
@@ -438,23 +438,23 @@ function Navbar({ dark, onToggleTheme }) {
       </nav>
 
       <div className="nav-actions">
-        <a
+        {/* <a
           className="nav-resume-btn"
           href={PROFILE.javaResume}
           download="/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf"
         >
           <Download size={16} />
           Download Resume
-        </a>
+        </a> */}
 
-        <button
+        {/* <button
           className="theme-btn"
           type="button"
           onClick={onToggleTheme}
           aria-label="Toggle color theme"
         >
           {dark ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        </button> */}
       </div>
     </header>
   );
@@ -544,12 +544,18 @@ function Hero() {
         </div>
 
         <div className="floating-note">
-          Java &amp; Spring Boot
+          Java full-stack
           <br />
-          AI/ML &amp; Analytics
-          <br />
-          Web Development
+          AI/ML Engineer
+          
         </div>
+        
+        <div className="floating-note-again">
+         Data Analytics
+         <br />
+         Power BI &amp; Tableau ∞
+        </div>
+
 
         <span className="sparkle">✦</span>
       </div>
@@ -1150,14 +1156,14 @@ function Skills() {
               ))}
             </div>
 
-            <a
+            {/* <a
               className="secondary-btn skill-resume-btn"
               href={group.resume}
               download={group.downloadName}
             >
               {group.buttonLabel}
               <Download size={16} />
-            </a>
+            </a> */}
           </article>
         ))}
       </div>
@@ -1196,9 +1202,9 @@ function Contact() {
           <FaGithub size={18} /> GitHub
         </a>
 
-        <a href={`mailto:${PROFILE.email}`}>
+        {/* <a href={`mailto:${PROFILE.email}`}>
           <Mail size={17} /> {PROFILE.email}
-        </a>
+        </a> */}
       </div>
     </section>
   );
@@ -1239,7 +1245,7 @@ function App() {
           <span>NANCY SHARMA</span>
         </a>
 
-        <p>Java Development · AI/ML · Data Analytics</p>
+        <p>Java full-stack · AI/ML · Data Analytics</p>
 
         <a href="#home">Back to top ↑</a>
       </footer>
