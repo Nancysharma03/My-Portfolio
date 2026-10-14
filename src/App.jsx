@@ -295,8 +295,8 @@ const skillGroups = [
       "Responsive Web Design",
     ],
     resume: PROFILE.javaResume,
-    downloadName: "Nancy_Sharma_Java_Full_Stack_Resume.pdf",
-    buttonLabel: "Download Java Resume",
+    downloadName: "/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf",
+    buttonLabel: "Download Resume",
   },
   {
     id: "aiml",
@@ -329,7 +329,7 @@ const skillGroups = [
       "Hyperparameter Tuning",
     ],
     resume: PROFILE.analyticsResume,
-    downloadName: "Nancy_Sharma_Data_Analytics_Resume.pdf",
+    downloadName: "/Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
     buttonLabel: "Download Resume",
   },
   {
@@ -358,7 +358,7 @@ const skillGroups = [
       "Jupyter Notebook",
     ],
     resume: PROFILE.analyticsResume,
-    downloadName: "Nancy_Sharma_Data_Analytics_Resume.pdf",
+    downloadName: "/Nancy_Sharma_SoftwareEngineer_DataAnalyst.pdf",
     buttonLabel: "Download Resume",
   },
 ];
@@ -394,7 +394,7 @@ function SocialLinks() {
 
       <a
         href={PROFILE.javaResume}
-        download="Nancy_Sharma_Java_Full_Stack_Resume.pdf"
+        download="/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf"
         aria-label="Download Java resume"
       >
         <FileText size={18} />
@@ -437,7 +437,7 @@ function Navbar({ dark, onToggleTheme }) {
         <a
           className="nav-resume-btn"
           href={PROFILE.javaResume}
-          download="Nancy_Sharma_Java_Full_Stack_Resume.pdf"
+          download="/Nancy_Sharma_JAVA_FULL_STACK_ENGINEER.pdf"
         >
           <Download size={16} />
           Download Resume
